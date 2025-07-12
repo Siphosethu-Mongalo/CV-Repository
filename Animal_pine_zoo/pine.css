@@ -1,0 +1,172 @@
+body{
+     margin: 0;
+     background-color: #020202;
+    
+     font-family: Helvetica;
+}
+
+#header{
+      background-image  : url('images/wood-bg.png');
+      padding: 10px;
+      text-align: center;
+      
+}
+
+#header img {
+      height:60px;
+}
+
+#tabs-top{
+      display: flex;
+      justify-content: center;
+      background-color: #1f1f1f;
+      padding: 10px;
+}
+
+#tabs-top a{
+      padding: 15px 25px;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+}
+
+#tabs-top a:hover{
+      background-color: #666;
+}
+
+.contain{
+      display: flex;
+      flex-direction: column;
+      padding:20px;
+      padding: 20px;
+}
+
+/*selected animal*/
+
+.animal-display{
+     flex: 1 1 75%;
+      background-color: #2c2c2c;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+       animation: fadeIn 0.5s ease;
+      color: white;
+}
+
+.selected-animal {
+      position: relative;
+      border: 6px;
+      border-image-slice: 1;
+      animation: griadient-border 6s linear infinite;
+      padding: 10px;
+      max-width: 400px;
+}
+
+#selected-animal img{
+      width: 100%;
+      border: 6px solid;
+      border-image: linear-gradient(270deg, white, black, blue, purple, white) 1;
+      border-image-slice: 1;
+      border-radius: 10px;
+      animation: gradientBorder 5s linear infinite;
+}
+
+.animal-info{
+      margin-top:15px;
+}
+
+.animal-info h2{
+      margin:0;
+      color: #ffffff;
+      font-size: 24px;
+}
+
+.animal-info p{
+      color: #ccc;
+      font-size:17px;
+}
+
+/*exrta image style*/
+
+#animal-extra-img{
+      width: 100px;
+      border-radius: 6px;
+      border:2px solid;
+}
+
+
+/* Animations */
+@keyframes gradientBorder {
+  0% {
+    border-image-source: linear-gradient(0deg, white, black, blue, purple, white);
+  }
+  25% {
+    border-image-source: linear-gradient(90deg, white, black, blue, purple, white);
+  }
+  50% {
+    border-image-source: linear-gradient(180deg, white, black, blue, purple, white);
+  }
+  75% {
+    border-image-source: linear-gradient(270deg, white, black, blue, purple, white);
+  }
+  100% {
+    border-image-source: linear-gradient(360deg, white, black, blue, purple, white);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animal-grid{
+      display: grid;
+      flex: 1 1 300px;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      
+}
+
+.animal-card {
+      background-color: gray;
+      border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.animal-card:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.animal-card img {
+      width: 100%;
+      border-radius: 6px;
+      display:block;
+}
+
+.animal-card-name {
+    padding: 10px;
+    font-weight: bold;
+    background-color: black;
+    color:white;
+}
+
+/* Select button styling */
+.select-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.select-button:hover {
+  background-color: black;
+}
