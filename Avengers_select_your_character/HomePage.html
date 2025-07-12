@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Avengers.css">
+    <title>Home Page</title>
+</head>
+<body>
+    
+        <header class="header">
+        
+    
+    </header>
+
+            <!--The logo will go back here-->
+            <div class="logo-container1">
+                <img src="images/Avengers_Logo.jpg" class="logo1">
+            </div>
+
+
+
+        <div class="contain">
+                <!--Character display area on the left side-->
+            <div class="character-display">
+                    <!--existing character display content-->
+                <div class="selected-character">
+                    <img src="images/avengers_01.jpg" id="selected-character-img">
+                        <div class="character-info">
+                            <h2 id="character-name">Thor Odinson</h2>
+                            <p><strong>Birth Place:</strong><span id="birthplace">Asgard</span></p>
+                            <p><strong>Alignment:</strong><span id="Good">Good</span></p>
+                        </div>
+
+                        <!--Power stats-->
+                        <div class="power-stats">
+                            <h3>Power Stats:</h3>
+                            
+                            <div class="stat-row">
+                                <span class="stat-name">Intelligence:</span>
+                                <div class="stat-bars" id="intelligence-bar">
+
+                                </div> <!--These bars will be added in java script-->
+                            </div>
+                        </div>
+
+                    <!--durability-->
+                    <div class="stat-row">
+                        <span class="stat-name">Durability:</span>
+                        <div class="stat-bars" id="durability-bar">
+                    
+                        </div>
+                    </div>
+
+                    <!--Power-->
+                    <div class="stat-row">
+                        <span class="stat-name">Power:</span>
+                        <div class="stat-bars" id="power-bar">
+                    
+                        </div>
+                    </div>
+
+                    <!--Combat-->
+                    <div class="stat-row">
+                        <span class="stat-name">Combat:</span>
+                        <div class="stat-bars" id="combat-bar">
+                    
+                        </div>
+                    </div>
+
+                    <!--Speed-->
+                    <div class="stat-row">
+                        <span class="stat-name">Speed:</span>
+                        <div class="stat-bars" id="speed-bar">
+                    
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        <div class="character-extra-image">
+            <img id="character-extra-img" src="images/rider.jpg">
+            
+                </div>
+
+            <button class="select-button">Select Your Character</button>
+        </div>
+
+        <!--Characters will appear on the right side of the screen-->
+    
+
+        <!-- character selection phase-->
+         <div class="character-grid"> <!--Thor-->
+            <div class="character-card"
+                 data-character="Thor Odinson"
+                 data-birthplace="Asgard"
+                 data-intelligence="9"
+                 data-strength="9"
+                 data-speed="8"
+                 data-durability="10"
+                 data-power="10"
+                 data-extra-image="images/Thor.jpg"
+                 data-combat="8">
+
+            <img src="images/avengers_01.jpg">
+            <div class="character-card-name">Thor Odinson</div>
+            </div>
+
+            <!--Hulk-->
+            <div class="character-card"
+                 data-character="Hulk"
+                 data-birthplace="Earth"
+                 data-intelligence="8"
+                 data-strength="10"
+                 data-speed="9"
+                 data-durability="10"
+                 data-power="10"
+                  data-extra-image="images/hulk.jpg"
+                 data-combat="6">
+
+            <img src="images/avengers_03.jpg">
+            <div class="character-card-name">Hulk</div>
+            </div>
+
+            <!--Iron Man-->
+            <div class="character-card"
+                 data-character="Iron Man"
+                 data-birthplace="Earth"
+                 data-intelligence="10"
+                 data-strength="6"
+                 data-speed="6"
+                 data-durability="16"
+                 data-power="6"
+                  data-extra-image="images/iron.jpg"
+                 data-combat="5">
+
+            <img src="images/avengers_02.jpg">
+            <div class="character-card-name">Iron Man</div>
+            </div>
+
+            <!--captain america-->
+            <div class="character-card"
+                 data-character="Captain America"
+                 data-birthplace="Earth"
+                 data-intelligence="7"
+                 data-strength="6"
+                 data-speed="6"
+                 data-durability="7"
+                 data-power="6"
+                  data-extra-image="images/Captain.jpg"
+                 data-combat="10">
+
+            <img src="images/avengers_05.jpg">
+            <div class="character-card-name">Captain america</div>
+            </div>
+
+            <!--Black Widow-->
+            <div class="character-card"
+                 data-character="Black Widow"
+                 data-birthplace="Earth"
+                 data-intelligence="7"
+                 data-strength="5"
+                 data-speed="5"
+                 data-durability="6"
+                 data-power="3"
+                  data-extra-image="images/widow.jpg"
+                 data-combat="8">
+
+            <img src="images/avengers_06.jpg">
+            <div class="character-card-name">Black Widow</div>
+            </div>
+
+            <!--Hawyeke-->
+            <div class="character-card"
+                 data-character="Hawkeye"
+                 data-birthplace="Earth"
+                 data-intelligence="8"
+                 data-strength="5"
+                 data-speed="4"
+                 data-durability="4"
+                 data-power="2"
+                 data-extra-image="images/Hawk.jpg"
+                 data-combat="8">
+
+            <img src="images/avengers_04.jpg">
+            <div class="character-card-name">Hawkeye</div>
+            </div>
+
+            <!--Ghost Rider-->
+            <div class="character-card"
+                 data-character="Ghost Rider"
+                 data-birthplace="Hell"
+                 data-intelligence="7"
+                 data-strength="10"
+                 data-speed="10"
+                 data-durability="9"
+                 data-power="10"
+                 data-extra-image="images/rider.jpg"
+                 data-combat="9">
+
+            <img src="images/ghost.jpg">
+            <div class="character-card-name">Ghost Rider</div>
+            </div>
+
+            <!--Thanos-->
+            <div class="character-card"
+                 data-character="Thanos"
+                 data-birthplace="Titan"
+                 data-intelligence="10"
+                 data-strength="9"
+                 data-speed="4"
+                 data-durability="9"
+                 data-power="10"
+                 data-extra-image="images/thanoss.jpg"
+                 data-combat="7">
+
+            <img src="images/Thanos.jpg">
+            <div class="character-card-name">Thanos</div>
+            </div>
+
+         </div>
+
+         <script src="Avengers.js"></script>
+</body>
+</html>

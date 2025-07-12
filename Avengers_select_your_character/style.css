@@ -1,0 +1,164 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    height: 100vh;
+    padding:0;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+.nav-bar {
+    position: relative;
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 30px;
+    margin: 0;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-menu li {
+    margin: 0 ;
+}
+
+.nav-menu a {
+    color:white;
+    text-decoration: none;
+    font-size: 19px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover{
+    color: #dcdcdc;
+    background-color: blueviolet;
+}
+
+.header{
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.curverd-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, rgb(215, 5, 215), white);
+    border-bottom-right-radius: 50% 40%;
+    border-bottom-left-radius: 50% 40%;
+    z-index: 0;
+}
+
+.list {
+    margin-top: 10%;
+    list-style-image: url(images/pointer-icon.png);
+    color: black;
+}
+
+/* character profile*/
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+    flex: 1;
+    padding: 30px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h4 {
+    color: white;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: black;
+    display: block;
+}
+
+/*making the images a scrollable*/
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    scrollbar-width: thin;
+    scrollbar-color: white;
+}
+
+.gallery::-webkit-scrollbar {
+    height: 9px;
+}
+
+.gallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.gallery::-webkit-slider-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        .gallery a {
+            display: inline-block;
+            flex: 0 0 auto;
+        }
+
+.gallery img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
